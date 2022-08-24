@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.board{
+    width: 100px;
+    height: 100px;
+    background-color: #c2c2c2;
+}
+
+.reverse-l {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.board-right {
+    border-bottom: 2px solid black;
+}
+
+.board-bottom {
+    border-right: 2px solid black;
+}

@@ -1,11 +1,66 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
+import './table.css'
+
 
 export const Table = () => {
-    const createTable = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-    
-    createTable.map((element, index) => {
-        return(
-            <div key={index}>{element}</div>
-        )
-    })
+    const [board, setBoard] = useState([
+        {
+            player:null,
+            style:'reverse-l'
+        },
+        {
+            player:null,
+            style:'reverse-l'
+        },
+        {
+            player:null,
+            style:'board-right'
+        },
+        {
+            player:null,
+            style:'reverse-l'
+        },
+        {
+            player:null,
+            style:'reverse-l'
+        },
+        {
+            player:null,
+            style:'board-right'
+        },
+        {
+            player:null,
+            style:'board-bottom'
+        },
+        {
+            player:null,
+            style:'board-bottom'
+        },
+        {
+            player:null,
+            style:''
+        }
+    ])
+    const [player, setPlayer] = useState(1)
+    const playerMove = (index) => {
+        
+        
+    }
+    return(
+    <div className="container">
+
+        {board.map((ele, i) => {
+            return(
+                <div 
+                    key={i} 
+                    className={`board ${ele.style}`}
+                    onClick={() => {
+                        
+                    }}>
+                    
+                </div>
+            )
+        })}
+    </div>
+   )
 }
